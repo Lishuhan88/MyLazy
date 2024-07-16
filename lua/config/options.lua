@@ -46,5 +46,9 @@ vim.g.autoformat = false
 --   filetypes = { "c", "cpp", "objc", "objcpp", "cuda", "proto" },
 -- })
 
+-- .clangd文件中
+-- CompileFlags:
+--   CompilationDatabase: ./build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.qtc_clangd
+
 
 
