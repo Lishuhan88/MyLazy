@@ -20,12 +20,12 @@ keymap.set("n", "'", "<nop>") --让'键不做任何功能
 --keymap.set("n", "t", "'") --互换t和'
 --keymap.set("n", "'", "t") --互换t和'
 -- 保存退出
-keymap.set("n", "M", ":wall<CR>")
+keymap.set("n", "M", "<cmd>wall<CR>")
 keymap.set("n", "q", ":q<CR>")
 keymap.set("n", "Q", ":qall<CR>")
 
 -- 空格+回车 取消高亮
-keymap.set("n", "<leader><CR>", ":nohlsearch<CR>")
+keymap.set("n", "<leader><CR>", "<cmd>nohlsearch<CR>")
 
 -- 快速移动光标
 keymap.set("n", "E", "K") --把E改为帮助
@@ -34,7 +34,7 @@ keymap.set({'n', 'v'}, "J", "5j")
 keymap.set({'n', 'v'}, "zh", "^")
 keymap.set({'n', 'v'}, "zl", "$")
 -- 在源文件/头文件之间切换
-keymap.set("n", "ga", ":ClangdSwitchSourceHeader<CR>")
+keymap.set("n", "ga", "<cmd>ClangdSwitchSourceHeader<CR>")
 -- windows下创建软连接命令 需要管理员权限
 --New-Item -ItemType SymbolicLink -Path "link" -Target "target"
 
