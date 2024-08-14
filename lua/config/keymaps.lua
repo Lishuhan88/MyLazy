@@ -21,8 +21,8 @@ keymap.set("n", "'", "<nop>") --让'键不做任何功能
 --keymap.set("n", "'", "t") --互换t和'
 -- 保存退出
 keymap.set("n", "M", "<cmd>wall<CR>")
-keymap.set("n", "q", ":q<CR>")
-keymap.set("n", "Q", ":qall<CR>")
+keymap.set("n", "q", "<cmd>q<CR>")
+keymap.set("n", "Q", "<cmd>qall<CR>")
 
 -- 空格+回车 取消高亮
 keymap.set("n", "<leader><CR>", "<cmd>nohlsearch<CR>")
