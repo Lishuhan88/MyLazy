@@ -3,6 +3,7 @@
 -- Add any additional keymaps here
 
 -- lsp键位说明ctrl-n,p给跳转自动补全 ctrl-f,b给悬浮提示框跳转
+-- 关于折叠说明za折叠或者展开局部代码区，zA折叠或展开全部代码区
 
 local keymap = vim.keymap
 -- ------------- 插入模式 ------------- ---
