@@ -33,14 +33,27 @@ keymap.set({'n', 'v'}, "K", "5k")
 keymap.set({'n', 'v'}, "J", "5j")
 keymap.set({'n', 'v'}, "zh", "^")
 keymap.set({'n', 'v'}, "zl", "$")
+
 -- 在源文件/头文件之间切换
 keymap.set("n", "ga", "<cmd>ClangdSwitchSourceHeader<CR>")
--- windows下创建软连接命令 需要管理员权限
---New-Item -ItemType SymbolicLink -Path "link" -Target "target"
-
-
 
 -- 跳转书签
 keymap.set("n", "'", "`") --把’改为书签的跳转功能                                                                                                     
 keymap.set("n", "dm", ":delmarks ") --dm删除marks
+
+-- 缩进
+keymap.set("n", "<", "<<")
+keymap.set("n", ">", ">>")
+
+--调节分屏大小
+keymap.set("n", "<up>", "<cmd>res +5<CR>")
+keymap.set("n", "<down>", "<cmd>res -5<CR>")
+keymap.set("n", "<left>", "<cmd>vertical resize +5<CR>")
+keymap.set("n", "<right>", "<cmd>vertical resize -5<CR>")
+
+-- windows下终端相关
+keymap.set({"n", "i"}, "<A-->", '<cmd>exe winheight(0)/3."split" | term powershell<cr>')
+keymap.set({"n", "i"}, "<A-\\>", '<cmd>exe "vsplit" | term powershell<cr>')
+keymap.set("n", "<A-w>", "<cmd>bd<CR>")
+
 
