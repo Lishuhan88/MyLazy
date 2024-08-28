@@ -7,13 +7,13 @@ return{
         },
         config = function ()
             require("tokyonight").setup({
+                -- 使用storm样式
+                style = "storm",
                 styles = {
                     -- 禁止一切斜体
                     comments = { italic = false },
                     keywords = { italic = false },
                 },
-                vim.cmd([[colorscheme tokyonight-storm]]),
-                -- vim.cmd([[colorscheme tokyonight]]),
             })
             require('barbecue').setup{
                 theme = 'tokyonight',
