@@ -10,6 +10,9 @@ return{
             "nvim-telescope/telescope.nvim", -- optional
             "ibhagwan/fzf-lua",              -- optional
         },
-        config = true
+        config = true，
+        keys = {
+            {"<leader>ga", "<cmd>Neogit<CR>"},
+        },
     },
 }
