@@ -1,6 +1,7 @@
 return{
     {
         "folke/tokyonight.nvim",
+        lazy = true,
         dependencies = {
             "utilyre/barbecue.nvim",
             "SmiteshP/nvim-navic",
