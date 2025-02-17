@@ -55,6 +55,6 @@ keymap.set("n", "<right>", "<cmd>vertical resize -5<CR>")
 -- windows下终端相关
 keymap.set({"n", "i"}, "<A-->", '<cmd>exe winheight(0)/3."split" | term powershell<cr>')
 keymap.set({"n", "i"}, "<A-\\>", '<cmd>exe "vsplit" | term powershell<cr>')
-keymap.set("n", "<A-w>", "<cmd>bd<CR>")
+keymap.set("n", "<A-w>", "<cmd>bd!<CR>")
 
 
