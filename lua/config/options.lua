@@ -33,6 +33,7 @@ option.exrc = true --支持每个工作目录下有一个局部的.nvim.lua文�
 option.wrap = true --当一行满的时候会自动显示到下一行
 option.splitright = true --打开分屏默认在右边显示
 option.scrolloff = 5 --光标移动到buffer的顶部和底部时保持五行距离
+vim.cmd("tnoremap <esc> <C-\\><C-n>") --在终端模式下按esc回到normal模式
 vim.cmd("autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o") --解决o携带注释插入下一行的问题
 
 -- Buffer Settings --
