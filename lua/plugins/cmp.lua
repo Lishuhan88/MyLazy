@@ -37,6 +37,10 @@ return {
                 { name = 'luasnip' },
                 { name = "buffer" },
             },
+            -- 禁用自动导入
+            completion = {
+                autocomplete = false,
+            },
             mapping = cmp.mapping.preset.insert {
                 ["<Tab>"] = cmp.mapping(function(fallback)
                     if cmp.visible() then
